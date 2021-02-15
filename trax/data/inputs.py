@@ -932,7 +932,7 @@ def make_additional_stream(stream=gin.REQUIRED):
 @gin.configurable()
 def make_parallel_stream(streams=gin.REQUIRED):
   """Create a parallel stream for use in gin configs for additional tasks."""
-  return Parallel(streams)()
+  return Parallel(streams)
 
 
 @gin.configurable()
